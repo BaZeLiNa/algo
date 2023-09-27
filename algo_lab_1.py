@@ -25,7 +25,7 @@ class TestIsSubarray(unittest.TestCase):
     def test_subarray_found_in_other_places(self):
         nums1 = [1, 3, 5]
         nums2 = [1, 2, 3, 4, 5]
-        self.assertTrue(nums1, nums2)
+        self.assertTrue(is_subarray(nums1, nums2))
 
 
 if __name__ == "__main__":
