@@ -30,5 +30,5 @@ class TestSumOfThree(unittest.TestCase):
         array = [1, 2, 3]
         self.assertFalse(sum_of_three(array, 7))
 
-
-
+    if __name__ == "__main__":
+        unittest.main()
