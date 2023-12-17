@@ -18,13 +18,16 @@ class TestCountPaths(unittest.TestCase):
 
     def test_test2_corridor(self):
         corridor = [
-            ['a', 'b', 'b'],
-            ['c', 'd', 'c'],
-            ['c', 'b', 'a']
+            ['a', 'a', 'a', 'a', 'a', 'a', 'a'],
+            ['a', 'a', 'a', 'a', 'a', 'a', 'a'],
+            ['a', 'a', 'a', 'a', 'a', 'a', 'a'],
+            ['a', 'a', 'a', 'a', 'a', 'a', 'a'],
+            ['a', 'a', 'a', 'a', 'a', 'a', 'a'],
+            ['a', 'a', 'a', 'a', 'a', 'a', 'a'],
         ]
-        W, H = 3, 3
+        W, H = 7, 6
         result = count_paths(W, H, corridor)
-        self.assertEqual(4, result)
+        self.assertEqual(201684, result)
 
     def test_test3_corridor(self):
         corridor = [
